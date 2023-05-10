@@ -47,12 +47,12 @@ const CodeEditor = ({ onChange, initialValue }: CodeEditorProps) => {
 			defaultOptions
 		);
 
-		highlighter.highLightOnDidChangeModelContent(
-			() => {},
-			() => {},
-			undefined,
-			() => {}
-		);
+		// highlighter.highLightOnDidChangeModelContent(
+		// 	() => {},
+		// 	() => {},
+		// 	undefined,
+		// 	() => {}
+		// );
 
 		highlighter.highlightOnDidChangeModelContent(100);
 		highlighter.addJSXCommentCommand();
