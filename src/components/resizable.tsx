@@ -14,23 +14,27 @@ const Resizable = ({ direction, children }: ResizableProps) => {
 	const [width, setWidth] = useState(window.innerWidth * 0.75);
 	const defaultOnErrorFn = useRef(window.onerror);
 
-	// new ResizeObserver(_.debounce(entries => {}, 200);
-
 	useEffect(() => {
 		let timer: any;
 		let onErr: any;
+		let animationFrame: number | null = null;
 		const listener = () => {
 			if (timer) {
 				clearTimeout(timer);
 			}
-			setTimeout(() => {
-				setInnerHeight(window.innerHeight);
-				setInnerWidth(window.innerWidth);
-				if (window.innerWidth * 0.75 < width) {
-					setWidth(window.innerWidth * 0.75);
-				}
-			}, 200);
+			new ResizeObserver(() => {
+				animationFrame = window.requestAnimationFrame(() => {
+					setTimeout(() => {
+						setInnerHeight(window.innerHeight);
+						setInnerWidth(window.innerWidth);
+						if (window.innerWidth * 0.75 < width) {
+							setWidth(window.innerWidth * 0.75);
+						}
+					}, 500);
+				});
+			});
 		};
+
 		window.addEventListener('resize', listener);
 
 		window.onerror = (...args) => {
@@ -42,17 +46,13 @@ const Resizable = ({ direction, children }: ResizableProps) => {
 		};
 
 		return () => {
+			if (animationFrame) {
+				window.cancelAnimationFrame(animationFrame);
+			}
 			window.removeEventListener('resize', listener);
 			window.onerror = onErr;
 		};
 	}, [width]);
-
-	// const calcWidth = () => {
-	//   let actualWidth = Math.min(width,window.innerWidth * 0.75);
-	//   actualWidth = Math.max(actualWidth,window.innerWidth * 0.2);
-	//   if(actualWidth !== width) setWidth(actualWidth);
-	//   return actualWidth;
-	// }
 
 	if (direction === 'horizontal') {
 		resizableProps = {
