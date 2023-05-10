@@ -88,7 +88,7 @@ const CodeEditor = ({ onChange, initialValue }: CodeEditorProps) => {
 				onMount={onEditorMount}
 				value={initialValue}
 				language='javascript'
-				height='500px'
+				height='100%'
 				theme='vs-dark'
 				options={{
 					wordWrap: 'on',
