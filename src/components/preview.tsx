@@ -45,7 +45,7 @@ const Preview = ({ code, err }: PreviewProps) => {
 		}, 50);
 	}, [code]);
 
-	console.log(err);
+	// console.log(err);
 
 	return (
 		<div className='preview-wrapper'>
