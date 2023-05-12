@@ -44,9 +44,6 @@ const Preview = ({ code, err }: PreviewProps) => {
 			iframe.current.contentWindow.postMessage(code, '*');
 		}, 50);
 	}, [code]);
-
-	// console.log(err);
-
 	return (
 		<div className='preview-wrapper'>
 			<iframe
