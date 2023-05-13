@@ -1,6 +1,6 @@
 {
   "name": "@codewrite/local-api",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "publishConfig": {
     "access": "public"
@@ -23,9 +23,9 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@codewrite/local-client": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "http-proxy-middleware": "^2.0.6",
-    "@codewrite/local-client": "^0.1.0"
+    "http-proxy-middleware": "^2.0.6"
   }
 }
