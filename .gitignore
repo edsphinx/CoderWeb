@@ -8,6 +8,9 @@
 
 # production
 /build
+/packages/cli/dist
+/packages/local-api/dist
+/packages/local-client/build
 
 # misc
 .DS_Store
