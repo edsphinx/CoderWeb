@@ -14,13 +14,13 @@ CodeWrite is built using a client-side architecture primarily based on HTML, CSS
 
 ## Key Features:
 
-4.1 **Portfolio Showcase:** CodeWrite provides a customizable portfolio template where developers can highlight their projects, skills, work experience, and educational background. It allows developers to present their work in a visually appealing manner, making it easy for visitors to navigate and explore.
+4.1 **_Portfolio Showcase:_** CodeWrite provides a customizable portfolio template where developers can highlight their projects, skills, work experience, and educational background. It allows developers to present their work in a visually appealing manner, making it easy for visitors to navigate and explore.
 
-4.2 **Code Snippets and Project Descriptions:** Developers can showcase their coding expertise by including code snippets and project descriptions in their portfolios. This feature enables visitors to review the developer's coding style, problem-solving skills, and overall project accomplishments.
+4.2 **_Code Snippets and Project Descriptions:_** Developers can showcase their coding expertise by including code snippets and project descriptions in their portfolios. This feature enables visitors to review the developer's coding style, problem-solving skills, and overall project accomplishments.
 
-4.3 **Responsive Design:** CodeWrite is designed to be responsive, ensuring that the portfolio looks and functions well across various devices and screen sizes. This responsiveness enhances the user experience, allowing visitors to access the portfolio seamlessly from desktops, laptops, tablets, and mobile devices.
+4.3 **_Responsive Design:_** CodeWrite is designed to be responsive, ensuring that the portfolio looks and functions well across various devices and screen sizes. This responsiveness enhances the user experience, allowing visitors to access the portfolio seamlessly from desktops, laptops, tablets, and mobile devices.
 
-4.4 **Deployment and Distribution:** CodeWrite leverages npmjs.com for deployment and distribution. By packaging the project as an npm package, developers can easily install and integrate the portfolio template into their own web applications.
+4.4 **_Deployment and Distribution:_** CodeWrite leverages npmjs.com for deployment and distribution. By packaging the project as an npm package, developers can easily install and integrate the portfolio template into their own web applications.
 
 ## Performance and Optimization:
 
@@ -38,10 +38,13 @@ Providing comprehensive documentation is essential for developers who want to us
 
 To further enhance the CodeWrite project, future development efforts could consider the following:
 
-**Customization Options:** Providing more configuration options to allow developers to personalize the portfolio template, including color schemes, layouts, and typography choices.
-**Integrations:** Adding integrations with popular development platforms or services like GitHub, GitLab, or Stack Overflow, enabling developers to showcase their contributions and activities in those ecosystems.
-**Interactive Features:** Incorporating interactive elements or animations to make the portfolio more engaging and memorable for visitors.
-**Analytics and Insights:** Implementing analytics functionality to track visitor traffic, engagement, and other metrics, providing valuable insights to developers about their portfolio's performance.
+**_Customization Options:_** Providing more configuration options to allow developers to personalize the portfolio template, including color schemes, layouts, and typography choices.
+
+**_Integrations:_** Adding integrations with popular development platforms or services like GitHub, GitLab, or Stack Overflow, enabling developers to showcase their contributions and activities in those ecosystems.
+
+**_Interactive Features:_** Incorporating interactive elements or animations to make the portfolio more engaging and memorable for visitors.
+
+**_Analytics and Insights:_** Implementing analytics functionality to track visitor traffic, engagement, and other metrics, providing valuable insights to developers about their portfolio's performance.
 
 ## Conclusion:
 
